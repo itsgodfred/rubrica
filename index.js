@@ -4,7 +4,7 @@ const cors = require("cors");
 const pool = require("./database");
 const PORT = 4000;
 const corsOptions = {
-  origin: "https://contacts-pied-delta.vercel.app/",
+  origin: "https://contacts-pied-delta.vercel.app",
   credentials: true,
   methods: ["GET", "POST", "PUT", "DELETE"],
 };
