@@ -39,6 +39,11 @@ app.post("/addcontact", async (req, res) => {
         error: "numero is required",
       });
     }
+    if (/[a-zA-Z]/.test(numero)) {
+      return res.json({
+        error: "numero must contain only numbers",
+      });
+    }
 
     const newContact = await pool.query(
       `
