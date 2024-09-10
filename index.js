@@ -59,7 +59,7 @@ app.post("/addcontact", async (req, res) => {
 });
 
 app.delete("/deletecontact/:id", async (req, res) => {
-  const { id } = req.params; // Extract id from URL parameters
+  const { id } = req.params; // Extract id from URL
 
   try {
     // Execute the DELETE query
